@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>云径 CityWalk · 成都路线规划</title>
+  <meta name="description" content="一句话偏好，AI 选出成都景点并排出可执行的城市漫游路线；预算、步行与资料状态由规则校验。" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230d1218'/%3E%3Cpath d='M8 22c4-1 5-10 9-10s5 6 7 8' fill='none' stroke='%236fb4ff' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./src/ui/app.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="云径 CityWalk · 成都篇 首页" data-i18n-aria="brand.aria">
+        <span class="brand-line"><mark>云径</mark><span>CITYWALK</span></span>
+        <small class="brand-sub" data-i18n="brand.sub">成都篇</small>
+      </a>
+      <div class="top-actions">
+        <button type="button" id="theme-toggle" class="icon-btn" aria-label="切换主题" data-i18n-aria="theme.toggle">
+          <svg class="ico ico-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" /></svg>
+          <svg class="ico ico-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.8A8.6 8.6 0 1 1 9.2 3.5a7 7 0 0 0 11.3 11.3z" /></svg>
+        </button>
+        <button type="button" id="settings-open" class="icon-btn" aria-label="API 设置" aria-haspopup="dialog" aria-expanded="false" title="API 设置" data-i18n-aria="settings.open" data-i18n-title="settings.open">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9" /><circle cx="15" cy="7" r="2.2" /><circle cx="9" cy="17" r="2.2" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <button type="button" class="panel-toggle panel-toggle--left" id="toggle-left"
+              aria-label="收起路线栏" aria-expanded="true" aria-controls="planner-panel" data-i18n-aria="panel.collapseLeft">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" /></svg>
+      </button>
+
+      <aside class="planner" id="planner-panel" aria-label="路线规划">
+        <div class="planner-head">
+          <h1 data-i18n-html="hero.title">把一句话，<br />走成一条路线。</h1>
+          <p data-i18n="hero.lead">AI 读偏好、选景点、排顺序；预算与步行距离由规则复核。</p>
+        </div>
+
+        <section class="ai-summary" id="ai-summary" hidden aria-label="AI 对需求的理解"></section>
+
+        <section class="route-block" id="route-view" data-sample="base">
+          <header class="block-head">
+            <h2 data-i18n="route.title">路线</h2>
+            <span id="route-reason" class="route-reason"></span>
+          </header>
+          <ol class="timeline" id="route-timeline"></ol>
+        </section>
+
+        <section class="budget" aria-label="时间预算">
+          <div class="budget-top">
+            <span data-i18n="budget.title">时间预算</span>
+            <b id="budget-total">— / — min</b>
+          </div>
+          <div class="budget-track" aria-hidden="true">
+            <i id="budget-walk" class="budget-walk"></i>
+            <i id="budget-stay" class="budget-stay"></i>
+            <i id="budget-buffer" class="budget-buffer"></i>
+          </div>
+          <div class="budget-legend">
+            <span><i class="dot walk"></i><b id="budget-walk-text">—</b></span>
+            <span><i class="dot stay"></i><b id="budget-stay-text">—</b></span>
+            <span><i class="dot buffer"></i><b id="budget-buffer-text">—</b></span>
+          </div>
+        </section>
+      </aside>
+
+      <section class="map-stage" id="map-shell" aria-label="成都路线地图">
+        <div class="map-frame">
+          <div id="amap-canvas" class="amap-canvas" hidden aria-label="成都地图"></div>
+          <svg id="map-canvas" class="map-canvas" role="img" aria-label="成都路线示意地图" data-i18n-aria="map.aria"></svg>
+
+          <div class="map-hud map-hud--place">
+            <b data-i18n="map.place">成都 · 主城区</b>
+            <span id="map-source-label" data-i18n="map.source">选点示意 · 直线距离</span>
+          </div>
+          <div class="map-hud map-hud--north" aria-hidden="true"><span>N</span><i></i></div>
+          <div class="map-hud map-hud--scale" aria-hidden="true"><b id="map-scale-label">3 km</b><i></i></div>
+          <div class="map-hud map-hud--hint" aria-hidden="true" data-i18n="map.hint">拖动平移 · 滚轮缩放</div>
+
+          <div class="map-legend" aria-hidden="true">
+            <span><i class="line solid"></i><em data-i18n="legend.network">真实路网</em></span>
+            <span><i class="line dashed"></i><em data-i18n="legend.straight">直线估算</em></span>
+            <span><i class="dot stop"></i><em data-i18n="legend.selected">选中站点</em></span>
+          </div>
+
+          <button type="button" id="map-view-toggle" class="map-view-toggle" hidden title="切换 2D / 3D">3D</button>
+        </div>
+      </section>
+
+      <aside class="detail" id="stop-detail" aria-label="站点详情" aria-live="polite">
+        <p class="detail-empty-title" data-i18n="detail.emptyTitle">先选一站</p>
+        <p class="detail-empty-text" data-i18n="detail.emptyText">路线生成后，点左侧站点查看解说、选点理由和来源。</p>
+      </aside>
+
+      <button type="button" class="panel-toggle panel-toggle--right" id="toggle-right"
+              aria-label="收起详情栏" aria-expanded="true" aria-controls="stop-detail" data-i18n-aria="panel.collapseRight">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg>
+      </button>
+    </main>
+
+    <button type="button" class="panel-tab panel-tab--left" id="tab-left" aria-label="展开路线栏" data-i18n-aria="panel.expandLeft" data-i18n="panel.tabLeft">路线</button>
+    <button type="button" class="panel-tab panel-tab--right" id="tab-right" aria-label="展开详情栏" data-i18n-aria="panel.expandRight" data-i18n="panel.tabRight">详情</button>
+
+    <footer class="composer">
+      <div class="composer-inner">
+        <div id="tour-status" class="status" role="status" aria-live="polite" hidden></div>
+
+        <div class="composer-stack">
+          <div class="composer-box">
+            <button type="button" class="collapse-btn" id="composer-collapse" aria-label="收起输入框" title="收起" data-i18n-aria="composer.collapse">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+            </button>
+            <label class="sr-only" for="tour-prompt">输入你的成都出行需求</label>
+            <textarea id="tour-prompt" maxlength="300" rows="1" placeholder="说说你想怎么逛成都，例如：半天，想喝茶、拍照、少走路" data-i18n-placeholder="composer.placeholder"></textarea>
+            <div class="composer-tools">
+              <button type="button" id="tour-follow-reset" class="tool-btn" disabled data-i18n="composer.reset">重置</button>
+              <span class="composer-hint" data-i18n="composer.hint">Enter 生成 · Shift + Enter 换行</span>
+              <span class="composer-mode" id="tour-generate-label" data-i18n="composer.plan">AI 规划路线</span>
+              <button type="button" id="tour-generate" class="send-btn" aria-label="AI 规划路线" data-i18n-aria="composer.plan">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M12 5l-6 6M12 5l6 6" /></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="composer-attach" id="tour-quick-slot">
+            <span class="quick-label" data-i18n="composer.attachLabel">试一试</span>
+            <button type="button" data-tour-case="standard" data-i18n="case.standard">半天 · 茶与拍照</button>
+            <button type="button" data-tour-case="humanities" data-i18n="case.humanities">历史人文</button>
+            <button type="button" data-tour-case="lesswalk" data-i18n="case.lesswalk">少走路</button>
+            <span class="attach-divider" aria-hidden="true"></span>
+            <button type="button" data-tour-follow="换成喝茶主题" data-tour-follow-en="Switch to a tea theme" disabled data-i18n="follow.tea">换成喝茶</button>
+            <button type="button" data-tour-follow="多看历史人文" data-tour-follow-en="More history and culture" disabled data-i18n="follow.humanities">多看人文</button>
+            <button type="button" data-tour-follow="加上拍照打卡" data-tour-follow-en="Add photo spots" disabled data-i18n="follow.photo">加拍照</button>
+          </div>
+        </div>
+        <button type="button" class="composer-launcher" id="composer-open">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6" /></svg>
+          <span data-i18n="composer.expand">展开输入</span>
+        </button>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="./src/app/chrome.js"></script>
+  <script type="module" src="./src/ui/mountTour.js"></script>
+  <script type="module" src="./src/ui/settings.js"></script>
+</body>
+</html>

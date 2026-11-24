@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-11-24T16:48:27+08:00",
+  "cities": [
+    {
+      "city_id": "chengdu",
+      "display_name": "成都",
+      "status": "ready",
+      "manifest_path": "data/cities/chengdu/manifest.json"
+    }
+  ]
+}

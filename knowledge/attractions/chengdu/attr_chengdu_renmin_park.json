@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "id": "attr_chengdu_renmin_park",
+  "poi_id": "chengdu_renmin_park",
+  "city_id": "chengdu",
+  "name": "人民公园",
+  "category": "城市公园",
+  "summary": "成都人民公园原名少城公园，园内有鹤鸣茶社。",
+  "history": null,
+  "architecture": null,
+  "cultural_significance": null,
+  "observation_guide": null,
+  "sources": [
+    {
+      "id": "src_chengdu_renmin_park_20261124",
+      "title": "公园记事",
+      "url": "https://hg.qhdcaw.gov.cn/portal/article/index/id/44/cid/39.html",
+      "publisher": "秦皇岛市委政法委网站",
+      "source_type": "government",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    }
+  ],
+  "source_ids": [
+    "src_chengdu_renmin_park_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "editorial",
+  "confidence": "medium",
+  "note": "仅摘要按所列来源核对；入口坐标、开放情况及其他细节另行核验。",
+  "updated_at": "2026-11-24"
+}

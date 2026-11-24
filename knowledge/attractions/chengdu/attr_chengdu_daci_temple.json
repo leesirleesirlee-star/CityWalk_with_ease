@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "id": "attr_chengdu_daci_temple",
+  "poi_id": "chengdu_daci_temple",
+  "city_id": "chengdu",
+  "name": "大慈寺",
+  "category": "寺院",
+  "summary": "大慈寺位于成都锦江区，是与成都历史相关的佛教寺院。",
+  "history": null,
+  "architecture": null,
+  "cultural_significance": null,
+  "observation_guide": null,
+  "sources": [
+    {
+      "id": "src_chengdu_daci_20261124",
+      "title": "大慈寺在成都",
+      "url": "https://cdsjjq.sczwfw.gov.cn/module/download/downfile.jsp?classid=0&filename=b7300c6adff04871ad049ab608c04a18.pdf",
+      "publisher": "成都市锦江区政务服务网",
+      "source_type": "government",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    }
+  ],
+  "source_ids": [
+    "src_chengdu_daci_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "editorial",
+  "confidence": "medium",
+  "note": "仅摘要按所列来源核对；入口坐标、开放情况及其他细节另行核验。",
+  "updated_at": "2026-11-24"
+}

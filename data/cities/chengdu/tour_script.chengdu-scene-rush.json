@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.1.0",
+  "meta": {
+    "schema_version": "1.1.0",
+    "source": "deepworks",
+    "generated_at": "2026-11-20T00:00:00.000Z",
+    "pipeline_version": "v4-chengdu-1.1.0",
+    "city": {
+      "id": "chengdu",
+      "name": "成都",
+      "pack_version": "0.1.0"
+    },
+    "budget": {
+      "mode": "strict",
+      "input_min": 120,
+      "total_min": 115,
+      "breakdown": {
+        "walk_min": 50.9,
+        "stay_min": 64
+      }
+    },
+    "dropped": [
+      {
+        "id": "cd-001",
+        "name": "大慈寺",
+        "kind": "score_below_threshold",
+        "reason": "coord_source=unmatched，无法计算步行耗时，不参与选点"
+      },
+      {
+        "id": "cd-002",
+        "name": "东郊记忆",
+        "kind": "score_below_threshold",
+        "reason": "coord_source=unmatched，无法计算步行耗时，不参与选点"
+      },
+      {
+        "id": "cd-004",
+        "name": "九眼桥",
+        "kind": "score_below_threshold",
+        "reason": "coord_source=unmatched，无法计算步行耗时，不参与选点"
+      },
+      {
+        "id": "cd-006",
+        "name": "成都大熊猫繁育研究基地",
+        "kind": "score_below_threshold",
+        "reason": "coord_source=unmatched，无法计算步行耗时，不参与选点"
+      },
+      {
+        "id": "cd-008",
+        "name": "太古里",
+        "kind": "score_below_threshold",
+        "reason": "coord_source=unmatched，无法计算步行耗时，不参与选点"
+      },
+      {
+        "id": "cd-003",
+        "name": "锦里",
+        "kind": "budget_exceeded",
+        "reason": "加入后总时长 152.6 分钟超过上限 120 分钟"
+      },
+      {
+        "id": "cd-005",
+        "name": "宽窄巷子",
+        "kind": "budget_exceeded",
+        "reason": "加入后总时长 173.7 分钟超过上限 120 分钟"
+      },
+      {
+        "id": "cd-007",
+        "name": "人民公园",
+        "kind": "budget_exceeded",
+        "reason": "加入后总时长 168.2 分钟超过上限 120 分钟"
+      }
+    ],
+    "agent_trace": [
+      {
+        "step": 1,
+        "label": "解析需求",
+        "input_summary": "候选 10 个",
+        "output_summary": "解析需求完成",
+        "hits": 10,
+        "duration_ms": 43,
+        "evidence_refs": [],
+        "warnings": []
+      },
+      {
+        "step": 2,
+        "label": "加载城市包",
+        "input_summary": "候选 10 个",
+        "output_summary": "加载城市包完成",
+        "hits": 10,
+        "duration_ms": 61,
+        "evidence_refs": [],
+        "warnings": []
+      },
+      {
+        "step": 3,
+        "label": "贪心选点",
+        "input_summary": "候选 10 个",
+        "output_summary": "贪心选点完成",
+        "hits": 2,
+        "duration_ms": 58,
+        "evidence_refs": [],
+        "warnings": []
+      },
+      {
+        "step": 4,
+        "label": "预算校验",
+        "input_summary": "候选 10 个",
+        "output_summary": "预算校验完成",
+        "hits": 10,
+        "duration_ms": 80,
+        "evidence_refs": [],
+        "warnings": []
+      },
+      {
+        "step": 5,
+        "label": "组装脚本",
+        "input_summary": "候选 10 个",
+        "output_summary": "入选 2，丢弃 8",
+        "hits": 10,
+        "duration_ms": 63,
+        "evidence_refs": [],
+        "warnings": [
+          "路网不可用，腿时长按直线估算"
+        ]
+      }
+    ],
+    "validation": {
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        "路网数据缺失，路线为直线估算",
+        "本次演示站点均无三维/全景资产，为图文解说模式"
+      ]
+    }
+  },
+  "route": [
+    {
+      "order": 1,
+      "id": "cd-009",
+      "name": "望江楼公园",
+      "lat": 30.6320131,
+      "lng": 104.0894282,
+      "stay_min": 32,
+      "score": 0.0274,
+      "reason": "性价比 0.0281（价值 0.9，耗时 32 分钟），贪心入选",
+      "commentary": "【核心看点】崇丽阁的鎏金宝顶；两百余种竹子；锦江边的薛涛井。竹叶在头顶合拢，风过时像下了一场很轻的雨；江面的船笛从林外传来。【适合场景】人文了解、慢走细看。【游览小贴士】从南门进先看崇丽阁，再沿竹林小径走到江边；下午侧光最好。建议预留约 40 分钟，穿舒适的鞋。（待核验）",
+      "assets": {
+        "panorama": null,
+        "model3d": null,
+        "photo": null
+      },
+      "leg": null
+    },
+    {
+      "order": 2,
+      "id": "cd-010",
+      "name": "武侯祠",
+      "lat": 30.6483863,
+      "lng": 104.0454567,
+      "stay_min": 32,
+      "score": 0.0107,
+      "reason": "性价比 0.0109（价值 0.9，耗时 82.9 分钟），贪心入选",
+      "commentary": "【核心看点】红墙夹道的竹影；岳飞手书《出师表》刻石；刘备殿与诸葛亮殿的中轴秩序。竹叶摩擦的声音很轻，红墙把阳光滤成一条条暖色，游客会不自觉压低声音。【适合场景】人文了解、中轴慢走。【游览小贴士】先走中轴线看建筑秩序，再折回红墙竹影；上午侧光穿过竹林最好看。建议预留约 40 分钟，穿舒适的鞋。（待核验）",
+      "assets": {
+        "panorama": null,
+        "model3d": null,
+        "photo": null
+      },
+      "leg": {
+        "from_id": "cd-009",
+        "to_id": "cd-010",
+        "distance_m": 4584,
+        "walk_min": 50.9,
+        "routing_status": "fallback_straight"
+      }
+    }
+  ]
+}

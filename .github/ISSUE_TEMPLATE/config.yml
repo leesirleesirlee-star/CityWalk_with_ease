@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/leesirleesirlee-star/CityWalk_with_ease/security/advisories/new
+    about: Please do not report security issues in public issues. Use a private GitHub Security Advisory.
+  - name: Questions and discussion
+    url: https://github.com/leesirleesirlee-star/CityWalk_with_ease
+    about: Discussions are disabled for this repository. Browse the repository and open the closest issue form instead.

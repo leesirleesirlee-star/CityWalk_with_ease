@@ -1,0 +1,852 @@
+{
+  "type": "FeatureCollection",
+  "meta": {
+    "city_id": "chengdu",
+    "fetched_at": "2026-11-19T11:17:23.026Z",
+    "bbox": [
+      103.95,
+      30.55,
+      104.2,
+      30.75
+    ],
+    "endpoint_used": "https://z.overpass-api.de/api/interpreter",
+    "query": "[out:json][timeout:90];\n(\n  node[\"tourism\"=\"attraction\"](30.6,104.02,30.72,104.12);\n  way[\"tourism\"=\"attraction\"](30.6,104.02,30.72,104.12);\n  relation[\"tourism\"=\"attraction\"](30.6,104.02,30.72,104.12);\n  node[\"historic\"](30.6,104.02,30.72,104.12);\n  way[\"historic\"](30.6,104.02,30.72,104.12);\n  relation[\"historic\"](30.6,104.02,30.72,104.12);\n  way[\"leisure\"=\"park\"](30.6,104.02,30.72,104.12);\n  relation[\"leisure\"=\"park\"](30.6,104.02,30.72,104.12);\n);\nout center tags;",
+    "total_features": 24,
+    "matched_count": 19,
+    "unmatched_count": 5,
+    "match_rate": 0.7917,
+    "osm_candidates": 190,
+    "knowledge_total": 10,
+    "license": "ODbL 1.0",
+    "attribution": "© OpenStreetMap contributors",
+    "unmatched_names": [
+      "大慈寺",
+      "九眼桥",
+      "成都大熊猫繁育研究基地",
+      "太古里"
+    ],
+    "coord_source_values": [
+      "overpass",
+      "knowledge_md",
+      "unmatched",
+      "wikipedia"
+    ],
+    "offline_checked_at": "2026-11-19T11:52:05.546Z",
+    "bbox_rejected": [
+      {
+        "poi_id": "cd-002",
+        "name": "东郊记忆",
+        "coordinates": [
+          104.1205546,
+          30.6710828
+        ]
+      }
+    ],
+    "route_catalog": "data/cities/chengdu/route-catalog.json",
+    "route_knowledge_dir": "knowledge/route-pois/chengdu",
+    "route_knowledge_total": 14,
+    "updated_at": "2026-11-24T16:48:27+08:00",
+    "route_note": "2026-11-24 扩充：新增 14 个路线候选（cd-101..cd-114），坐标为 WGS84 公开资料核对值，coord_source=wikipedia；原 10 个 feature 的 poi_id/name/coord_source/坐标未改动。"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "poi_id": "cd-001",
+        "knowledge_id": "chengdu_daci_temple",
+        "name": "大慈寺",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "寺院",
+        "opening_hours": null,
+        "coord_source": "unmatched",
+        "matched_knowledge": null,
+        "match_method": null,
+        "source_file": "knowledge/attractions/chengdu/attr_chengdu_daci_temple.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "poi_id": "cd-002",
+        "knowledge_id": "chengdu_dongjiao",
+        "name": "东郊记忆",
+        "name_en": "Eastern Suburb Memory",
+        "osm_type": "way",
+        "osm_id": 259715485,
+        "category": "工业遗址艺术区",
+        "opening_hours": null,
+        "coord_source": "unmatched",
+        "matched_knowledge": null,
+        "match_method": null,
+        "source_file": "knowledge/attractions/chengdu/attr_chengdu_dongjiao.json",
+        "osm_name": null,
+        "osm_category": "leisure:park",
+        "bbox_rejected": true,
+        "rejected_coordinates": [
+          104.1205546,
+          30.6710828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.0469491,
+          30.6488068
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-003",
+        "knowledge_id": "chengdu_jinli",
+        "name": "锦里",
+        "name_en": "Jinli Ancient Street",
+        "osm_type": "way",
+        "osm_id": 837197354,
+        "category": "民俗夜市",
+        "opening_hours": null,
+        "coord_source": "overpass",
+        "matched_knowledge": "attr_chengdu_jinli.json",
+        "match_method": "exact",
+        "source_file": "knowledge/attractions/chengdu/attr_chengdu_jinli.json",
+        "osm_name": "锦里",
+        "osm_category": "tourism:attraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "poi_id": "cd-004",
+        "knowledge_id": "chengdu_jiuyanqiao",
+        "name": "九眼桥",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "河岸夜景",
+        "opening_hours": null,
+        "coord_source": "unmatched",
+        "matched_knowledge": null,
+        "match_method": null,
+        "source_file": "knowledge/attractions/chengdu/attr_chengdu_jiuyanqiao.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.051265,
+          30.6661912
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-005",
+        "knowledge_id": "chengdu_kuanzhai",
+        "name": "宽窄巷子",
+        "name_en": "Kuanzhai Xiangzi Alleys",
+        "osm_type": "way",
+        "osm_id": 588905842,
+        "category": "历史街区",
+        "opening_hours": null,
+        "coord_source": "overpass",
+        "matched_knowledge": "attr_chengdu_kuanzhai.json",
+        "match_method": "exact",
+        "source_file": "knowledge/attractions/chengdu/attr_chengdu_kuanzhai.json",
+        "osm_name": "宽窄巷子",
+        "osm_category": "tourism:attraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "poi_id": "cd-006",
+        "knowledge_id": "chengdu_panda",
+        "name": "成都大熊猫繁育研究基地",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "自然保护地",
+        "opening_hours": null,
+        "coord_source": "unmatched",
+        "matched_knowledge": null,
+        "match_method": null,
+        "source_file": "knowledge/attractions/chengdu/attr_chengdu_panda.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.0554652,
+          30.6594137
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-007",
+        "knowledge_id": "chengdu_renmin_park",
+        "name": "人民公园",
+        "name_en": "People's Park",
+        "osm_type": "way",
+        "osm_id": 103295076,
+        "category": "城市公园",
+        "opening_hours": null,
+        "coord_source": "overpass",
+        "matched_knowledge": "attr_chengdu_renmin_park.json",
+        "match_method": "exact",
+        "source_file": "knowledge/attractions/chengdu/attr_chengdu_renmin_park.json",
+        "osm_name": "人民公园",
+        "osm_category": "leisure:park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "poi_id": "cd-008",
+        "knowledge_id": "chengdu_taikooli",
+        "name": "太古里",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "潮流街区",
+        "opening_hours": null,
+        "coord_source": "unmatched",
+        "matched_knowledge": null,
+        "match_method": null,
+        "source_file": "knowledge/attractions/chengdu/attr_chengdu_taikooli.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.0894282,
+          30.6320131
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-009",
+        "knowledge_id": "chengdu_wangjianglou",
+        "name": "望江楼公园",
+        "name_en": "Wangjiang Lou Park",
+        "osm_type": "way",
+        "osm_id": 116486191,
+        "category": "古典园林",
+        "opening_hours": null,
+        "coord_source": "overpass",
+        "matched_knowledge": "attr_chengdu_wangjianglou.json",
+        "match_method": "exact",
+        "source_file": "knowledge/attractions/chengdu/attr_chengdu_wangjianglou.json",
+        "osm_name": "望江楼公园",
+        "osm_category": "leisure:park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.0454567,
+          30.6483863
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-010",
+        "knowledge_id": "chengdu_wuhou",
+        "name": "武侯祠",
+        "name_en": "Wuhou Temple",
+        "osm_type": "way",
+        "osm_id": 277942162,
+        "category": "历史祠庙",
+        "opening_hours": null,
+        "coord_source": "overpass",
+        "matched_knowledge": "attr_chengdu_wuhou.json",
+        "match_method": "exact",
+        "source_file": "knowledge/attractions/chengdu/attr_chengdu_wuhou.json",
+        "osm_name": "武侯祠",
+        "osm_category": "tourism:museum"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.02611111,
+          30.66194444
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-101",
+        "knowledge_id": "route_chengdu_dufu_caotang",
+        "name": "杜甫草堂",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "博物馆",
+        "tags": [
+          "诗歌文化",
+          "全国重点文物保护单位",
+          "园林",
+          "博物馆"
+        ],
+        "address": "成都市青羊区青华路38号",
+        "opening_hours": null,
+        "stay_min": 60,
+        "rating": null,
+        "summary": "唐代诗人杜甫流寓成都时的故居，位于青羊区青华路，现为杜甫草堂博物馆，1961年列入第一批全国重点文物保护单位。",
+        "source_urls": [
+          "https://zh.wikipedia.org/wiki/杜甫草堂"
+        ],
+        "coord_source": "wikipedia",
+        "coord_source_detail": "wikipedia",
+        "coordinate_system": "WGS84",
+        "matched_knowledge": "route_chengdu_dufu_caotang.json",
+        "match_method": "manual_public_geo",
+        "source_file": "knowledge/route-pois/chengdu/route_chengdu_dufu_caotang.json",
+        "knowledge_file": "knowledge/route-pois/chengdu/route_chengdu_dufu_caotang.json",
+        "verification_status": "pending"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.03976,
+          30.66383
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-102",
+        "knowledge_id": "route_chengdu_qingyang_gong",
+        "name": "青羊宫",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "寺院",
+        "tags": [
+          "道教宫观",
+          "川西第一道观",
+          "古建筑"
+        ],
+        "address": "成都市青羊区一环路西二段9号",
+        "opening_hours": null,
+        "stay_min": 45,
+        "rating": null,
+        "summary": "成都市区著名的道教宫观，位于青羊区一环路西二段，侧依锦江，有斗姆殿、八卦亭等建筑，被誉为“川西第一道观”。",
+        "source_urls": [
+          "https://zh.wikipedia.org/wiki/青羊宫"
+        ],
+        "coord_source": "wikipedia",
+        "coord_source_detail": "wikipedia",
+        "coordinate_system": "WGS84",
+        "matched_knowledge": "route_chengdu_qingyang_gong.json",
+        "match_method": "manual_public_geo",
+        "source_file": "knowledge/route-pois/chengdu/route_chengdu_qingyang_gong.json",
+        "knowledge_file": "knowledge/route-pois/chengdu/route_chengdu_qingyang_gong.json",
+        "verification_status": "pending"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.06988,
+          30.67755
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-103",
+        "knowledge_id": "route_chengdu_wenshu_yuan",
+        "name": "文殊院",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "寺院",
+        "tags": [
+          "佛教寺院",
+          "川西古建筑",
+          "园林",
+          "全国重点寺院"
+        ],
+        "address": "成都市青羊区文殊院街66号",
+        "opening_hours": null,
+        "stay_min": 50,
+        "rating": null,
+        "summary": "位于成都市中心文殊院街的佛教寺院，集禅林圣迹与园林名胜于一体，1983年被国务院确定为汉族地区佛教全国重点寺院。",
+        "source_urls": [
+          "https://zh.wikipedia.org/wiki/文殊院"
+        ],
+        "coord_source": "wikipedia",
+        "coord_source_detail": "wikipedia",
+        "coordinate_system": "WGS84",
+        "matched_knowledge": "route_chengdu_wenshu_yuan.json",
+        "match_method": "manual_public_geo",
+        "source_file": "knowledge/route-pois/chengdu/route_chengdu_wenshu_yuan.json",
+        "knowledge_file": "knowledge/route-pois/chengdu/route_chengdu_wenshu_yuan.json",
+        "verification_status": "pending"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.01125,
+          30.68367
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-104",
+        "knowledge_id": "route_chengdu_jinsha_site",
+        "name": "金沙遗址博物馆",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "博物馆",
+        "tags": [
+          "古蜀文明",
+          "青铜时代遗址",
+          "太阳神鸟",
+          "全国重点文物保护单位"
+        ],
+        "address": "成都市青羊区金沙遗址路2号",
+        "opening_hours": null,
+        "stay_min": 75,
+        "rating": null,
+        "summary": "依托金沙遗址原址建设的博物馆，遗址位于青羊区摸底河沿岸，2001年2月首次发现，属青铜时代古蜀文化，为全国重点文物保护单位。",
+        "source_urls": [
+          "https://zh.wikipedia.org/wiki/金沙遗址"
+        ],
+        "coord_source": "wikipedia",
+        "coord_source_detail": "wikipedia",
+        "coordinate_system": "WGS84",
+        "matched_knowledge": "route_chengdu_jinsha_site.json",
+        "match_method": "manual_public_geo",
+        "source_file": "knowledge/route-pois/chengdu/route_chengdu_jinsha_site.json",
+        "knowledge_file": "knowledge/route-pois/chengdu/route_chengdu_jinsha_site.json",
+        "verification_status": "pending"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.02913358,
+          30.66303616
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-105",
+        "knowledge_id": "route_chengdu_sichuan_museum",
+        "name": "四川博物院",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "博物馆",
+        "tags": [
+          "综合性博物馆",
+          "国家一级博物馆",
+          "文物"
+        ],
+        "address": "成都市青羊区浣花南路251号",
+        "opening_hours": null,
+        "stay_min": 80,
+        "rating": null,
+        "summary": "位于成都市青羊区浣花溪公园旁的综合性博物馆，始建于1941年，是西南地区规模最大的综合性博物馆之一，现有院藏文物35万余件。",
+        "source_urls": [
+          "https://zh.wikipedia.org/wiki/四川博物院"
+        ],
+        "coord_source": "wikipedia",
+        "coord_source_detail": "wikipedia",
+        "coordinate_system": "WGS84",
+        "matched_knowledge": "route_chengdu_sichuan_museum.json",
+        "match_method": "manual_public_geo",
+        "source_file": "knowledge/route-pois/chengdu/route_chengdu_sichuan_museum.json",
+        "knowledge_file": "knowledge/route-pois/chengdu/route_chengdu_sichuan_museum.json",
+        "verification_status": "pending"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.0612,
+          30.65973
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-106",
+        "knowledge_id": "route_chengdu_chengdu_museum",
+        "name": "成都博物馆",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "博物馆",
+        "tags": [
+          "城市博物馆",
+          "天府广场",
+          "新馆"
+        ],
+        "address": "成都市青羊区天府广场西侧小河街1号",
+        "opening_hours": null,
+        "stay_min": 70,
+        "rating": null,
+        "summary": "成都市级综合性城市博物馆，新馆位于天府广场西侧，2016年6月11日开放，与四川科技馆、四川省图书馆等共同构成天府广场文化建筑群。",
+        "source_urls": [
+          "https://zh.wikipedia.org/wiki/成都博物馆",
+          "https://www.wikidata.org/wiki/Q55696247"
+        ],
+        "coord_source": "wikipedia",
+        "coord_source_detail": "wikidata",
+        "coordinate_system": "WGS84",
+        "matched_knowledge": "route_chengdu_chengdu_museum.json",
+        "match_method": "manual_public_geo",
+        "source_file": "knowledge/route-pois/chengdu/route_chengdu_chengdu_museum.json",
+        "knowledge_file": "knowledge/route-pois/chengdu/route_chengdu_chengdu_museum.json",
+        "verification_status": "pending"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.065853,
+          30.657512
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-107",
+        "knowledge_id": "route_chengdu_tianfu_square",
+        "name": "天府广场",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "城市公园",
+        "tags": [
+          "城市广场",
+          "地铁换乘",
+          "城市地标"
+        ],
+        "address": "成都市青羊区人民南路一段",
+        "opening_hours": null,
+        "stay_min": 25,
+        "rating": null,
+        "summary": "位于成都市中心的城市广场，面积约8.8万平方米，是人民南路与蜀都大道交汇处的城市地标，地铁1号线与2号线在此换乘。",
+        "source_urls": [
+          "https://zh.wikipedia.org/wiki/天府广场"
+        ],
+        "coord_source": "wikipedia",
+        "coord_source_detail": "wikipedia",
+        "coordinate_system": "WGS84",
+        "matched_knowledge": "route_chengdu_tianfu_square.json",
+        "match_method": "manual_public_geo",
+        "source_file": "knowledge/route-pois/chengdu/route_chengdu_tianfu_square.json",
+        "knowledge_file": "knowledge/route-pois/chengdu/route_chengdu_tianfu_square.json",
+        "verification_status": "pending"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.0786,
+          30.6587
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-108",
+        "knowledge_id": "route_chengdu_chunxi_road",
+        "name": "春熙路",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "商业街区",
+        "tags": [
+          "商业步行街",
+          "春熙路商圈",
+          "购物"
+        ],
+        "address": "成都市锦江区春熙路",
+        "opening_hours": null,
+        "stay_min": 45,
+        "rating": null,
+        "summary": "成都最繁华的商业步行街，由春熙东路、春熙西路、春熙南路、春熙北路四条步行街组成，周边形成约0.4平方公里的春熙路商圈。",
+        "source_urls": [
+          "https://zh.wikipedia.org/wiki/春熙路"
+        ],
+        "coord_source": "wikipedia",
+        "coord_source_detail": "wikipedia",
+        "coordinate_system": "WGS84",
+        "matched_knowledge": "route_chengdu_chunxi_road.json",
+        "match_method": "manual_public_geo",
+        "source_file": "knowledge/route-pois/chengdu/route_chengdu_chunxi_road.json",
+        "knowledge_file": "knowledge/route-pois/chengdu/route_chengdu_chunxi_road.json",
+        "verification_status": "pending"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.0834,
+          30.6442
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-109",
+        "knowledge_id": "route_chengdu_anshun_bridge",
+        "name": "安顺廊桥",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "河岸夜景",
+        "tags": [
+          "廊桥",
+          "锦江",
+          "夜景",
+          "合江亭"
+        ],
+        "address": "成都市滨江路66号（锦江之上）",
+        "opening_hours": null,
+        "stay_min": 25,
+        "rating": null,
+        "summary": "横跨锦江的仿古廊桥，位于滨江路，桥上设有一家餐馆，夜间灯光与合江亭一带的锦江夜景相连。",
+        "source_urls": [
+          "https://zh.wikipedia.org/wiki/安顺廊桥"
+        ],
+        "coord_source": "wikipedia",
+        "coord_source_detail": "wikipedia",
+        "coordinate_system": "WGS84",
+        "matched_knowledge": "route_chengdu_anshun_bridge.json",
+        "match_method": "manual_public_geo",
+        "source_file": "knowledge/route-pois/chengdu/route_chengdu_anshun_bridge.json",
+        "knowledge_file": "knowledge/route-pois/chengdu/route_chengdu_anshun_bridge.json",
+        "verification_status": "pending"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.0275,
+          30.65956
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-110",
+        "knowledge_id": "route_chengdu_huanhuaxi_park",
+        "name": "浣花溪公园",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "城市公园",
+        "tags": [
+          "城市公园",
+          "诗歌文化",
+          "开放公园"
+        ],
+        "address": "成都市青羊区青华路9号",
+        "opening_hours": null,
+        "stay_min": 40,
+        "rating": null,
+        "summary": "位于青羊区青华路、北接杜甫草堂、东连四川博物院的城市公园，是成都市中心面积较大的开放式公园之一。",
+        "source_urls": [
+          "https://zh.wikipedia.org/wiki/浣花溪公园",
+          "https://www.wikidata.org/wiki/Q67936027"
+        ],
+        "coord_source": "wikipedia",
+        "coord_source_detail": "wikidata",
+        "coordinate_system": "WGS84",
+        "matched_knowledge": "route_chengdu_huanhuaxi_park.json",
+        "match_method": "manual_public_geo",
+        "source_file": "knowledge/route-pois/chengdu/route_chengdu_huanhuaxi_park.json",
+        "knowledge_file": "knowledge/route-pois/chengdu/route_chengdu_huanhuaxi_park.json",
+        "verification_status": "pending"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.0811936,
+          30.6453339
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-111",
+        "knowledge_id": "route_chengdu_hejiangting",
+        "name": "合江亭",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "古迹",
+        "tags": [
+          "锦江",
+          "府河",
+          "南河",
+          "夜景"
+        ],
+        "address": "成都市锦江区滨江东路合江亭",
+        "opening_hours": null,
+        "stay_min": 25,
+        "rating": null,
+        "summary": "位于府河与南河交汇处的亭式地标，是锦江夜游与滨江步道上的节点，合江亭一带为成都市区夜景观赏地之一。",
+        "source_urls": [
+          "https://zh.wikipedia.org/wiki/合江亭",
+          "https://www.openstreetmap.org/search?query=%E5%90%88%E6%B1%9F%E4%BA%AD%20%E6%88%90%E9%83%BD"
+        ],
+        "coord_source": "wikipedia",
+        "coord_source_detail": "osm_nominatim",
+        "coordinate_system": "WGS84",
+        "matched_knowledge": "route_chengdu_hejiangting.json",
+        "match_method": "manual_public_geo",
+        "source_file": "knowledge/route-pois/chengdu/route_chengdu_hejiangting.json",
+        "knowledge_file": "knowledge/route-pois/chengdu/route_chengdu_hejiangting.json",
+        "verification_status": "pending"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.04444,
+          30.67671
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-112",
+        "knowledge_id": "route_chengdu_yongling",
+        "name": "永陵博物馆",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "古迹",
+        "tags": [
+          "五代十国",
+          "前蜀",
+          "王建墓",
+          "全国重点文物保护单位"
+        ],
+        "address": "成都市金牛区永陵路10号",
+        "opening_hours": null,
+        "stay_min": 50,
+        "rating": null,
+        "summary": "依托前蜀高祖王建陵墓（永陵）建立的博物馆，位于金牛区永陵路，封土与墓室保存至今，为全国重点文物保护单位。",
+        "source_urls": [
+          "https://zh.wikipedia.org/wiki/王建墓",
+          "https://www.wikidata.org/wiki/Q1540709"
+        ],
+        "coord_source": "wikipedia",
+        "coord_source_detail": "wikidata",
+        "coordinate_system": "WGS84",
+        "matched_knowledge": "route_chengdu_yongling.json",
+        "match_method": "manual_public_geo",
+        "source_file": "knowledge/route-pois/chengdu/route_chengdu_yongling.json",
+        "knowledge_file": "knowledge/route-pois/chengdu/route_chengdu_yongling.json",
+        "verification_status": "pending"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.0707224,
+          30.6758523
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-113",
+        "knowledge_id": "route_chengdu_wenshufang",
+        "name": "文殊坊",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "商业街区",
+        "tags": [
+          "仿古街区",
+          "川西民居",
+          "四川美食",
+          "文殊院"
+        ],
+        "address": "成都市青羊区文殊院街",
+        "opening_hours": null,
+        "stay_min": 35,
+        "rating": null,
+        "summary": "以文殊院为核心的仿古休闲旅游商业街区，汇集古玩字画、四川美食与娱乐表演，是成都市区内的旅游休闲街区之一。",
+        "source_urls": [
+          "https://zh.wikipedia.org/wiki/文殊坊",
+          "https://www.openstreetmap.org/search?query=%E6%96%87%E6%AE%8A%E5%9D%8A%20%E6%88%90%E9%83%BD"
+        ],
+        "coord_source": "wikipedia",
+        "coord_source_detail": "osm_nominatim",
+        "coordinate_system": "WGS84",
+        "matched_knowledge": "route_chengdu_wenshufang.json",
+        "match_method": "manual_public_geo",
+        "source_file": "knowledge/route-pois/chengdu/route_chengdu_wenshufang.json",
+        "knowledge_file": "knowledge/route-pois/chengdu/route_chengdu_wenshufang.json",
+        "verification_status": "pending"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.05944444,
+          30.66638889
+        ]
+      },
+      "properties": {
+        "poi_id": "cd-114",
+        "knowledge_id": "route_chengdu_pinganqiao_church",
+        "name": "平安桥天主教堂",
+        "name_en": null,
+        "osm_type": null,
+        "osm_id": null,
+        "category": "古迹",
+        "tags": [
+          "主教座堂",
+          "近代建筑",
+          "天主教"
+        ],
+        "address": "成都市青羊区西华门街25号",
+        "opening_hours": null,
+        "stay_min": 25,
+        "rating": null,
+        "summary": "天主教成都教区的主教座堂，位于青羊区西华门街，由大、小经堂和主教公馆等建筑组成，建筑面积8508平方米。",
+        "source_urls": [
+          "https://zh.wikipedia.org/wiki/平安桥主教座堂"
+        ],
+        "coord_source": "wikipedia",
+        "coord_source_detail": "wikipedia",
+        "coordinate_system": "WGS84",
+        "matched_knowledge": "route_chengdu_pinganqiao_church.json",
+        "match_method": "manual_public_geo",
+        "source_file": "knowledge/route-pois/chengdu/route_chengdu_pinganqiao_church.json",
+        "knowledge_file": "knowledge/route-pois/chengdu/route_chengdu_pinganqiao_church.json",
+        "verification_status": "pending"
+      }
+    }
+  ]
+}

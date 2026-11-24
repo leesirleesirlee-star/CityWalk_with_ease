@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "id": "route_chengdu_jinsha_site",
+  "poi_id": "cd-104",
+  "city_id": "chengdu",
+  "name": "金沙遗址博物馆",
+  "category": "博物馆",
+  "summary": "依托金沙遗址原址建设的博物馆，遗址位于青羊区摸底河沿岸，2001年2月首次发现，属青铜时代古蜀文化，为全国重点文物保护单位。",
+  "tags": [
+    "古蜀文明",
+    "青铜时代遗址",
+    "太阳神鸟",
+    "全国重点文物保护单位"
+  ],
+  "address": "成都市青羊区金沙遗址路2号",
+  "opening_hours": null,
+  "stay_min": 75,
+  "coordinates": {
+    "lat": 30.68367,
+    "lng": 104.01125,
+    "system": "WGS84",
+    "source_detail": "wikipedia"
+  },
+  "sources": [
+    {
+      "id": "src_route_jinsha_site_wiki_20261124",
+      "title": "金沙遗址 - 维基百科",
+      "url": "https://zh.wikipedia.org/wiki/金沙遗址",
+      "publisher": "维基百科",
+      "source_type": "encyclopedia",
+      "accessed_at": "2026-11-24",
+      "verification_status": "pending",
+      "notes": "摘要事实与入口坐标的公开来源；坐标未经现场或官方复核。"
+    }
+  ],
+  "source_ids": [
+    "src_route_jinsha_site_wiki_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "pending",
+  "confidence": "medium",
+  "note": "摘要按所列公开来源摘录，未做官方或现场核验；入口坐标为公开地理数据核对值（WGS84），未经实地复核。",
+  "updated_at": "2026-11-24"
+}

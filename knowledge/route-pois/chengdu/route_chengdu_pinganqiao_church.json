@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "id": "route_chengdu_pinganqiao_church",
+  "poi_id": "cd-114",
+  "city_id": "chengdu",
+  "name": "平安桥天主教堂",
+  "category": "古迹",
+  "summary": "天主教成都教区的主教座堂，位于青羊区西华门街，由大、小经堂和主教公馆等建筑组成，建筑面积8508平方米。",
+  "tags": [
+    "主教座堂",
+    "近代建筑",
+    "天主教"
+  ],
+  "address": "成都市青羊区西华门街25号",
+  "opening_hours": null,
+  "stay_min": 25,
+  "coordinates": {
+    "lat": 30.66638889,
+    "lng": 104.05944444,
+    "system": "WGS84",
+    "source_detail": "wikipedia"
+  },
+  "sources": [
+    {
+      "id": "src_route_pinganqiao_church_wiki_20261124",
+      "title": "平安桥主教座堂 - 维基百科",
+      "url": "https://zh.wikipedia.org/wiki/平安桥主教座堂",
+      "publisher": "维基百科",
+      "source_type": "encyclopedia",
+      "accessed_at": "2026-11-24",
+      "verification_status": "pending",
+      "notes": "摘要事实与入口坐标的公开来源；坐标未经现场或官方复核。"
+    }
+  ],
+  "source_ids": [
+    "src_route_pinganqiao_church_wiki_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "pending",
+  "confidence": "medium",
+  "note": "摘要按所列公开来源摘录，未做官方或现场核验；入口坐标为公开地理数据核对值（WGS84），未经实地复核。",
+  "updated_at": "2026-11-24"
+}

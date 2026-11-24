@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "id": "attr_chengdu_wuhou",
+  "poi_id": "chengdu_wuhou",
+  "city_id": "chengdu",
+  "name": "武侯祠",
+  "category": "历史祠庙",
+  "summary": "成都武侯祠包含三国历史遗迹区、西区和锦里民俗区，是了解蜀汉历史文化的场所。",
+  "history": null,
+  "architecture": null,
+  "cultural_significance": null,
+  "observation_guide": null,
+  "sources": [
+    {
+      "id": "src_chengdu_wuhou_20261124",
+      "title": "成都武侯祠简介",
+      "url": "https://www.wuhouci.net.cn/about",
+      "publisher": "成都武侯祠博物馆",
+      "source_type": "museum",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    }
+  ],
+  "source_ids": [
+    "src_chengdu_wuhou_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "editorial",
+  "confidence": "medium",
+  "note": "仅摘要按所列来源核对；入口坐标、开放情况及其他细节另行核验。",
+  "updated_at": "2026-11-24"
+}

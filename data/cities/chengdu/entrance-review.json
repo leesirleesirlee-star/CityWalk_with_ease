@@ -1,0 +1,77 @@
+{
+  "checked_at": "2026-11-24",
+  "scope": "公开资料核验地点与入口线索；不是现场核验，不将高德搜索结果持久化。",
+  "coordinate_system": "WGS84",
+  "coordinate_status": "pending",
+  "entries": [
+    {
+      "poi_id": "cd-001",
+      "name": "大慈寺",
+      "area": "成都市锦江区大慈寺路附近、成都太古里旁",
+      "candidate_entrance": "大慈寺路23号方向及太古里侧入口，具体游客入口待实地或寺方核对",
+      "evidence": [
+        "https://cnta-tokyo-static.s3.ap-northeast-1.amazonaws.com/wp-content/uploads/2025/05/%E6%88%90%E9%83%BD%E8%A6%B3%E5%85%89%E3%82%AC%E3%82%A4%E3%83%892025%E5%B9%B4%E7%89%88.pdf",
+        "https://www.swireproperties.com/zh-cn/portfolio/current-developments/taikoo-li-chengdu/taikoo-li-chengdu/",
+        "https://gochina.com.tw/chengdu-taikoo-li/"
+      ],
+      "limitations": "大慈寺路23号及太古里侧入口为旅行资料线索，旅游资料与运营方确认寺院所在片区；未取得寺方入口说明或可独立核验的门点坐标。",
+      "checked_at": "2026-11-24",
+      "coordinate": null,
+      "coordinate_status": "pending"
+    },
+    {
+      "poi_id": "cd-002",
+      "name": "东郊记忆",
+      "area": "成都市成华区建设南支路一带",
+      "candidate_entrance": "东大门，建设南支路4号附近；入口精确点位待核对",
+      "evidence": [
+        "https://show.bilibili.com/platform/detail.html?campus_id=10447118&from_spmid=activity.activity-detail.activity-h5.0&id=16669",
+        "https://scca.miit.gov.cn/xwdt/gzdt/art/2024/art_1452d44252de460eae9d2a7f4891f0c7.html"
+      ],
+      "limitations": "活动地址可定位东大门附近，但不是坐标核验；原文件中被边界排除的 OSM 园区点也不是已确认入口。",
+      "checked_at": "2026-11-24",
+      "coordinate": null,
+      "coordinate_status": "pending"
+    },
+    {
+      "poi_id": "cd-004",
+      "name": "九眼桥",
+      "area": "一环路南一段九眼桥附近",
+      "candidate_entrance": "桥及周边为开放区域，无单一景区入口；具体步行汇合点待确定",
+      "evidence": [
+        "https://sc.people.com.cn/n2/2025/0904/c345167-41341674.html"
+      ],
+      "limitations": "需区分安顺廊桥、九眼桥、新九眼桥，不能把桥中心当作步行入口。",
+      "checked_at": "2026-11-24",
+      "coordinate": null,
+      "coordinate_status": "pending"
+    },
+    {
+      "poi_id": "cd-006",
+      "name": "成都大熊猫繁育研究基地",
+      "area": "成都市成华区熊猫大道1375号",
+      "candidate_entrance": "南大门或西大门，按实际出行方向选择",
+      "evidence": [
+        "https://www.panda.org.cn/yd/about/",
+        "https://www.panda.org.cn/cn/service/transit/"
+      ],
+      "limitations": "官方确认地址和两个大门及接驳方式，但未提供可核对的门点坐标；景区超出旧主城区边界，不能作为纯步行站点直接加入。",
+      "checked_at": "2026-11-24",
+      "coordinate": null,
+      "coordinate_status": "pending"
+    },
+    {
+      "poi_id": "cd-008",
+      "name": "太古里",
+      "area": "成都市锦江区中纱帽街8号",
+      "candidate_entrance": "开放式街区，可从春熙路站方向抵达；具体入口坐标待核对",
+      "evidence": [
+        "https://www.swireproperties.com/zh-cn/portfolio/current-developments/taikoo-li-chengdu/taikoo-li-chengdu/"
+      ],
+      "limitations": "官方确认地址与春熙路站交通联系，但未指定可独立核验的入口坐标。",
+      "checked_at": "2026-11-24",
+      "coordinate": null,
+      "coordinate_status": "pending"
+    }
+  ]
+}

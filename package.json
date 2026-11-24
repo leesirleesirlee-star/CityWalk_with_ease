@@ -1,0 +1,33 @@
+{
+  "name": "citywalk-with-ease",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "CityWalk with Ease — an AI-powered Chengdu city-walk planner: one sentence of preferences in, an executable walking route out.",
+  "keywords": [
+    "citywalk",
+    "chengdu",
+    "travel",
+    "itinerary",
+    "deepseek",
+    "amap",
+    "vite"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leesirleesirlee-star/CityWalk_with_ease.git"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}

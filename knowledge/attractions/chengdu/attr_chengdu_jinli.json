@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "id": "attr_chengdu_jinli",
+  "poi_id": "chengdu_jinli",
+  "city_id": "chengdu",
+  "name": "锦里",
+  "category": "民俗夜市",
+  "summary": "锦里文化旅游街区毗邻武侯祠，以三国文化、民俗和非遗体验为特色。",
+  "history": null,
+  "architecture": null,
+  "cultural_significance": null,
+  "observation_guide": null,
+  "sources": [
+    {
+      "id": "src_chengdu_jinli_20261124",
+      "title": "关于锦里",
+      "url": "https://www.cdjinli.com/about/intro/",
+      "publisher": "成都锦里",
+      "source_type": "official",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    }
+  ],
+  "source_ids": [
+    "src_chengdu_jinli_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "editorial",
+  "confidence": "medium",
+  "note": "仅摘要按所列来源核对；入口坐标、开放情况及其他细节另行核验。",
+  "updated_at": "2026-11-24"
+}

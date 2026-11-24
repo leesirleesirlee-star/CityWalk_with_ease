@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "city_id": "chengdu",
+  "display_name": "成都",
+  "updated_at": "2026-11-24T16:48:27+08:00",
+  "coordinate_system": "WGS84",
+  "capability": {
+    "walk_network": false,
+    "buildings_3d": false,
+    "panorama": false,
+    "photo": false
+  },
+  "data_files": {
+    "pois": "data/cities/chengdu/pois.geojson",
+    "walk_network": null,
+    "buildings": null,
+    "knowledge_dir": "knowledge/attractions/chengdu",
+    "route_catalog": "data/cities/chengdu/route-catalog.json",
+    "route_knowledge_dir": "knowledge/route-pois/chengdu"
+  },
+  "poi_summary": {
+    "total": 24,
+    "matched": 19,
+    "unmatched": 5,
+    "match_rate": 0.7917,
+    "bbox": [
+      103.95,
+      30.55,
+      104.2,
+      30.75
+    ],
+    "coord_source": "OpenStreetMap Overpass（原 5 条）+ 公开地理资料核对值（新增 14 条，WGS84，coord_source=wikipedia）",
+    "fetched_at": "2026-11-19T11:17:23.026Z",
+    "route_candidates": 19,
+    "route_knowledge_files": 14
+  },
+  "attribution": {
+    "license": "ODbL 1.0",
+    "attribution": "© OpenStreetMap contributors"
+  },
+  "scope_note": "覆盖成都主城区 bbox（103.95,30.55,104.20,30.75）内共 24 个路线候选：原 10 个 POI（5 个取到真实 OSM 坐标，5 个标 unmatched）+ 2026-11-24 新增 14 个已知坐标 POI（cd-101..cd-114，坐标为维基百科/Wikidata/OSM 公开值，WGS84，verification_status=pending）。不含步行路网、3D 建筑、全景与照片资产，对应 capability 全部为 false（按仓库实情，不美化）。"
+}

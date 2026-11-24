@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "id": "route_chengdu_dufu_caotang",
+  "poi_id": "cd-101",
+  "city_id": "chengdu",
+  "name": "杜甫草堂",
+  "category": "博物馆",
+  "summary": "唐代诗人杜甫流寓成都时的故居，位于青羊区青华路，现为杜甫草堂博物馆，1961年列入第一批全国重点文物保护单位。",
+  "tags": [
+    "诗歌文化",
+    "全国重点文物保护单位",
+    "园林",
+    "博物馆"
+  ],
+  "address": "成都市青羊区青华路38号",
+  "opening_hours": null,
+  "stay_min": 60,
+  "coordinates": {
+    "lat": 30.66194444,
+    "lng": 104.02611111,
+    "system": "WGS84",
+    "source_detail": "wikipedia"
+  },
+  "sources": [
+    {
+      "id": "src_route_dufu_caotang_wiki_20261124",
+      "title": "杜甫草堂 - 维基百科",
+      "url": "https://zh.wikipedia.org/wiki/杜甫草堂",
+      "publisher": "维基百科",
+      "source_type": "encyclopedia",
+      "accessed_at": "2026-11-24",
+      "verification_status": "pending",
+      "notes": "摘要事实与入口坐标的公开来源；坐标未经现场或官方复核。"
+    }
+  ],
+  "source_ids": [
+    "src_route_dufu_caotang_wiki_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "pending",
+  "confidence": "medium",
+  "note": "摘要按所列公开来源摘录，未做官方或现场核验；入口坐标为公开地理数据核对值（WGS84），未经实地复核。",
+  "updated_at": "2026-11-24"
+}

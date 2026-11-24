@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "id": "attr_chengdu_dongjiao",
+  "poi_id": "chengdu_dongjiao",
+  "city_id": "chengdu",
+  "name": "东郊记忆",
+  "category": "工业遗址艺术区",
+  "summary": "东郊记忆由原国营红光电子管厂旧址改建，保留工业遗存并发展文化创意活动。",
+  "history": null,
+  "architecture": null,
+  "cultural_significance": null,
+  "observation_guide": null,
+  "sources": [
+    {
+      "id": "src_chengdu_dongjiao_20261124",
+      "title": "东郊记忆工业遗产",
+      "url": "https://scca.miit.gov.cn/xwdt/gzdt/art/2024/art_1452d44252de460eae9d2a7f4891f0c7.html",
+      "publisher": "四川省通信管理局",
+      "source_type": "government",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    }
+  ],
+  "source_ids": [
+    "src_chengdu_dongjiao_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "editorial",
+  "confidence": "medium",
+  "note": "仅摘要按所列来源核对；入口坐标、开放情况及其他细节另行核验。",
+  "updated_at": "2026-11-24"
+}

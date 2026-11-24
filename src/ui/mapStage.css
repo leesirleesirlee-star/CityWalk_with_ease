@@ -1,0 +1,232 @@
+/* 成都主城区地图舞台：固定范围 + 平移缩放钳制 */
+
+.amap-canvas:not([hidden]) {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.amap-canvas .amap-marker-label {
+  color: #18212b;
+  background: #fff;
+  font: 600 12px/1.2 system-ui, sans-serif;
+}
+
+.map-frame:has(.amap-canvas:not([hidden])) .map-canvas,
+.map-frame:has(.amap-canvas:not([hidden])) .map-hud--north,
+.map-frame:has(.amap-canvas:not([hidden])) .map-hud--scale,
+.map-frame:has(.amap-canvas:not([hidden])) .map-hud--hint {
+  display: none;
+}
+
+.map-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  background: #0b0f14;
+}
+
+.map-canvas.is-dragging {
+  cursor: grabbing;
+}
+
+html[data-theme='light'] .map-canvas {
+  background: #eef0ea;
+}
+
+.map-ground {
+  fill: #0d1218;
+}
+
+html[data-theme='light'] .map-ground {
+  fill: #e9ece5;
+}
+
+.map-block {
+  fill: rgba(120, 150, 190, 0.045);
+  stroke: rgba(120, 150, 190, 0.12);
+  stroke-width: 1;
+}
+
+html[data-theme='light'] .map-block {
+  fill: rgba(120, 140, 120, 0.07);
+  stroke: rgba(120, 140, 120, 0.16);
+}
+
+.map-river {
+  fill: none;
+  stroke: rgba(86, 150, 210, 0.16);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.map-river--thin {
+  stroke-width: 3;
+  stroke: rgba(86, 150, 210, 0.18);
+}
+
+.map-road {
+  fill: none;
+  stroke: rgba(150, 165, 185, 0.1);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+html[data-theme='light'] .map-road {
+  stroke: rgba(110, 120, 110, 0.2);
+}
+
+.map-fence {
+  fill: none;
+  stroke: rgba(160, 180, 205, 0.28);
+  stroke-width: 1.5;
+  stroke-dasharray: 6 8;
+}
+
+/* ── 路线 ─────────────────────────────────────────── */
+
+.map-leg {
+  stroke-width: 7;
+  stroke-linecap: round;
+  opacity: 1;
+  animation: mapLegIn 520ms ease forwards;
+}
+
+.map-leg-label {
+  font: 600 12.5px/1 system-ui, 'Microsoft YaHei', sans-serif;
+  fill: #e0a34a;
+  paint-order: stroke;
+  stroke: #0b0f14;
+  stroke-width: 4;
+  opacity: 1;
+  pointer-events: none;
+  animation: mapLegIn 460ms ease forwards;
+}
+
+.map-leg-label--network { fill: #4fd39a; }
+.map-leg-label--unavailable,
+.map-leg-label--unknown { fill: #aeb6c2; }
+
+html[data-theme='light'] .map-leg-label {
+  stroke: #eef0ea;
+}
+
+/* ── 站点 ─────────────────────────────────────────── */
+
+.map-stop {
+  cursor: pointer;
+  opacity: 1;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: mapStopIn 560ms cubic-bezier(0.22, 0.9, 0.3, 1.15) forwards;
+}
+
+.map-stop-halo {
+  fill: rgba(124, 198, 255, 0.12);
+  stroke: rgba(124, 198, 255, 0.28);
+  stroke-width: 1.5;
+  transition: fill 180ms ease, stroke 180ms ease;
+}
+
+.map-stop-dot {
+  fill: #10161d;
+  stroke: #7cc6ff;
+  stroke-width: 3;
+  transition: stroke 180ms ease;
+}
+
+.map-stop-index {
+  font: 700 14px/1 system-ui, sans-serif;
+  fill: #9fd7ff;
+  pointer-events: none;
+}
+
+.map-stop-name {
+  font: 600 15.5px/1 system-ui, 'Microsoft YaHei', sans-serif;
+  fill: #eef4fa;
+  paint-order: stroke;
+  stroke: #0b0f14;
+  stroke-width: 4.5;
+  letter-spacing: 0.01em;
+  pointer-events: none;
+}
+
+/* 坐标不再画在地图上，保留选择器以免旧缓存里的标记显示成裸文字 */
+.map-stop-coord {
+  display: none;
+}
+
+html[data-theme='light'] .map-stop-dot {
+  fill: #f7f8f4;
+  stroke: #1f6f9e;
+}
+
+html[data-theme='light'] .map-stop-index {
+  fill: #1f6f9e;
+}
+
+html[data-theme='light'] .map-stop-name {
+  fill: #16202a;
+  stroke: #eef0ea;
+}
+
+html[data-theme='light'] .map-stop-coord {
+  fill: rgba(30, 42, 54, 0.62);
+  stroke: #eef0ea;
+}
+
+.map-stop.is-hot .map-stop-halo {
+  fill: rgba(124, 198, 255, 0.3);
+  stroke: rgba(160, 220, 255, 0.85);
+}
+
+.map-stop.is-hot .map-stop-dot {
+  stroke: #ffffff;
+}
+
+.map-stop.is-hot .map-stop-name {
+  fill: #ffffff;
+}
+
+html[data-theme='light'] .map-stop.is-hot .map-stop-name {
+  fill: #0a3550;
+}
+
+/* 无坐标站点（当前成都样例不会出现，保留状态标记能力） */
+.map-stop[data-coord-source='unmatched'] .map-stop-dot {
+  stroke-dasharray: 4 3;
+  opacity: 0.7;
+}
+
+/* ── 动效开关 ─────────────────────────────────────── */
+
+@keyframes mapLegIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes mapStopIn {
+  from { opacity: 0; transform: scale(0.55); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+html[data-motion='off'] .map-leg,
+html[data-motion='off'] .map-leg-label,
+html[data-motion='off'] .map-stop {
+  animation: none;
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .map-leg,
+  .map-leg-label,
+  .map-stop {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

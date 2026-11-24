@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "id": "attr_chengdu_wangjianglou",
+  "poi_id": "chengdu_wangjianglou",
+  "city_id": "chengdu",
+  "name": "望江楼公园",
+  "category": "古典园林",
+  "summary": "望江楼公园内有与唐代诗人薛涛纪念相关的景观；有关故居的说法应谨慎辨别。",
+  "history": null,
+  "architecture": null,
+  "cultural_significance": null,
+  "observation_guide": null,
+  "sources": [
+    {
+      "id": "src_chengdu_wangjianglou_20261124",
+      "title": "成都望江楼公园与薛涛",
+      "url": "https://m.thepaper.cn/baijiahao_15401769",
+      "publisher": "方志四川（澎湃新闻转载）",
+      "source_type": "government",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    }
+  ],
+  "source_ids": [
+    "src_chengdu_wangjianglou_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "editorial",
+  "confidence": "medium",
+  "note": "仅摘要按所列来源核对；入口坐标、开放情况及其他细节另行核验。",
+  "updated_at": "2026-11-24"
+}

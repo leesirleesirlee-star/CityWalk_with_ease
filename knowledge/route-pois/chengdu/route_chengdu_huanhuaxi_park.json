@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "id": "route_chengdu_huanhuaxi_park",
+  "poi_id": "cd-110",
+  "city_id": "chengdu",
+  "name": "浣花溪公园",
+  "category": "城市公园",
+  "summary": "位于青羊区青华路、北接杜甫草堂、东连四川博物院的城市公园，是成都市中心面积较大的开放式公园之一。",
+  "tags": [
+    "城市公园",
+    "诗歌文化",
+    "开放公园"
+  ],
+  "address": "成都市青羊区青华路9号",
+  "opening_hours": null,
+  "stay_min": 40,
+  "coordinates": {
+    "lat": 30.65956,
+    "lng": 104.0275,
+    "system": "WGS84",
+    "source_detail": "wikidata"
+  },
+  "sources": [
+    {
+      "id": "src_route_huanhuaxi_park_wiki_20261124",
+      "title": "浣花溪公园 - 维基百科",
+      "url": "https://zh.wikipedia.org/wiki/浣花溪公园",
+      "publisher": "维基百科",
+      "source_type": "encyclopedia",
+      "accessed_at": "2026-11-24",
+      "verification_status": "pending",
+      "notes": "摘要事实与入口坐标的公开来源；坐标未经现场或官方复核。"
+    },
+    {
+      "id": "src_route_huanhuaxi_park_geo_20261124",
+      "title": "Wikidata 实体（含坐标）",
+      "url": "https://www.wikidata.org/wiki/Q67936027",
+      "publisher": "Wikidata",
+      "source_type": "encyclopedia",
+      "accessed_at": "2026-11-24",
+      "verification_status": "pending",
+      "notes": "仅用于入口坐标核对；坐标为 WGS84。"
+    }
+  ],
+  "source_ids": [
+    "src_route_huanhuaxi_park_wiki_20261124",
+    "src_route_huanhuaxi_park_geo_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "pending",
+  "confidence": "medium",
+  "note": "摘要按所列公开来源摘录，未做官方或现场核验；入口坐标为公开地理数据核对值（WGS84），未经实地复核。",
+  "updated_at": "2026-11-24"
+}

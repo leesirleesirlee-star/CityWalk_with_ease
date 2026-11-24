@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "id": "attr_chengdu_kuanzhai",
+  "poi_id": "chengdu_kuanzhai",
+  "city_id": "chengdu",
+  "name": "宽窄巷子",
+  "category": "历史街区",
+  "summary": "宽窄巷子包括宽巷子、窄巷子和井巷子，展示成都街巷与院落文化。",
+  "history": null,
+  "architecture": null,
+  "cultural_significance": null,
+  "observation_guide": null,
+  "sources": [
+    {
+      "id": "src_chengdu_kuanzhai_20261124",
+      "title": "成都年味市集路线",
+      "url": "https://zhuanti.mct.gov.cn/rxhmxjgn2022/sichuan/detail/2899.html",
+      "publisher": "文化和旅游部",
+      "source_type": "government",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    }
+  ],
+  "source_ids": [
+    "src_chengdu_kuanzhai_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "editorial",
+  "confidence": "medium",
+  "note": "仅摘要按所列来源核对；入口坐标、开放情况及其他细节另行核验。",
+  "updated_at": "2026-11-24"
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "id": "route_chengdu_qingyang_gong",
+  "poi_id": "cd-102",
+  "city_id": "chengdu",
+  "name": "青羊宫",
+  "category": "寺院",
+  "summary": "成都市区著名的道教宫观，位于青羊区一环路西二段，侧依锦江，有斗姆殿、八卦亭等建筑，被誉为“川西第一道观”。",
+  "tags": [
+    "道教宫观",
+    "川西第一道观",
+    "古建筑"
+  ],
+  "address": "成都市青羊区一环路西二段9号",
+  "opening_hours": null,
+  "stay_min": 45,
+  "coordinates": {
+    "lat": 30.66383,
+    "lng": 104.03976,
+    "system": "WGS84",
+    "source_detail": "wikipedia"
+  },
+  "sources": [
+    {
+      "id": "src_route_qingyang_gong_wiki_20261124",
+      "title": "青羊宫 - 维基百科",
+      "url": "https://zh.wikipedia.org/wiki/青羊宫",
+      "publisher": "维基百科",
+      "source_type": "encyclopedia",
+      "accessed_at": "2026-11-24",
+      "verification_status": "pending",
+      "notes": "摘要事实与入口坐标的公开来源；坐标未经现场或官方复核。"
+    }
+  ],
+  "source_ids": [
+    "src_route_qingyang_gong_wiki_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "pending",
+  "confidence": "medium",
+  "note": "摘要按所列公开来源摘录，未做官方或现场核验；入口坐标为公开地理数据核对值（WGS84），未经实地复核。",
+  "updated_at": "2026-11-24"
+}

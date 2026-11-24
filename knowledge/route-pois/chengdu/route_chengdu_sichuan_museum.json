@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "id": "route_chengdu_sichuan_museum",
+  "poi_id": "cd-105",
+  "city_id": "chengdu",
+  "name": "四川博物院",
+  "category": "博物馆",
+  "summary": "位于成都市青羊区浣花溪公园旁的综合性博物馆，始建于1941年，是西南地区规模最大的综合性博物馆之一，现有院藏文物35万余件。",
+  "tags": [
+    "综合性博物馆",
+    "国家一级博物馆",
+    "文物"
+  ],
+  "address": "成都市青羊区浣花南路251号",
+  "opening_hours": null,
+  "stay_min": 80,
+  "coordinates": {
+    "lat": 30.66303616,
+    "lng": 104.02913358,
+    "system": "WGS84",
+    "source_detail": "wikipedia"
+  },
+  "sources": [
+    {
+      "id": "src_route_sichuan_museum_wiki_20261124",
+      "title": "四川博物院 - 维基百科",
+      "url": "https://zh.wikipedia.org/wiki/四川博物院",
+      "publisher": "维基百科",
+      "source_type": "encyclopedia",
+      "accessed_at": "2026-11-24",
+      "verification_status": "pending",
+      "notes": "摘要事实与入口坐标的公开来源；坐标未经现场或官方复核。"
+    }
+  ],
+  "source_ids": [
+    "src_route_sichuan_museum_wiki_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "pending",
+  "confidence": "medium",
+  "note": "摘要按所列公开来源摘录，未做官方或现场核验；入口坐标为公开地理数据核对值（WGS84），未经实地复核。",
+  "updated_at": "2026-11-24"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "id": "route_chengdu_wenshufang",
+  "poi_id": "cd-113",
+  "city_id": "chengdu",
+  "name": "文殊坊",
+  "category": "商业街区",
+  "summary": "以文殊院为核心的仿古休闲旅游商业街区，汇集古玩字画、四川美食与娱乐表演，是成都市区内的旅游休闲街区之一。",
+  "tags": [
+    "仿古街区",
+    "川西民居",
+    "四川美食",
+    "文殊院"
+  ],
+  "address": "成都市青羊区文殊院街",
+  "opening_hours": null,
+  "stay_min": 35,
+  "coordinates": {
+    "lat": 30.6758523,
+    "lng": 104.0707224,
+    "system": "WGS84",
+    "source_detail": "osm_nominatim"
+  },
+  "sources": [
+    {
+      "id": "src_route_wenshufang_wiki_20261124",
+      "title": "文殊坊 - 维基百科",
+      "url": "https://zh.wikipedia.org/wiki/文殊坊",
+      "publisher": "维基百科",
+      "source_type": "encyclopedia",
+      "accessed_at": "2026-11-24",
+      "verification_status": "pending",
+      "notes": "摘要事实与入口坐标的公开来源；坐标未经现场或官方复核。"
+    },
+    {
+      "id": "src_route_wenshufang_geo_20261124",
+      "title": "OpenStreetMap 检索（含坐标）",
+      "url": "https://www.openstreetmap.org/search?query=%E6%96%87%E6%AE%8A%E5%9D%8A%20%E6%88%90%E9%83%BD",
+      "publisher": "OpenStreetMap",
+      "source_type": "other",
+      "accessed_at": "2026-11-24",
+      "verification_status": "pending",
+      "notes": "仅用于入口坐标核对；坐标为 WGS84。"
+    }
+  ],
+  "source_ids": [
+    "src_route_wenshufang_wiki_20261124",
+    "src_route_wenshufang_geo_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "pending",
+  "confidence": "medium",
+  "note": "摘要按所列公开来源摘录，未做官方或现场核验；入口坐标为公开地理数据核对值（WGS84），未经实地复核。",
+  "updated_at": "2026-11-24"
+}

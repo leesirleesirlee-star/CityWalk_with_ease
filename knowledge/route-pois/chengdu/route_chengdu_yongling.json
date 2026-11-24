@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "id": "route_chengdu_yongling",
+  "poi_id": "cd-112",
+  "city_id": "chengdu",
+  "name": "永陵博物馆",
+  "category": "古迹",
+  "summary": "依托前蜀高祖王建陵墓（永陵）建立的博物馆，位于金牛区永陵路，封土与墓室保存至今，为全国重点文物保护单位。",
+  "tags": [
+    "五代十国",
+    "前蜀",
+    "王建墓",
+    "全国重点文物保护单位"
+  ],
+  "address": "成都市金牛区永陵路10号",
+  "opening_hours": null,
+  "stay_min": 50,
+  "coordinates": {
+    "lat": 30.67671,
+    "lng": 104.04444,
+    "system": "WGS84",
+    "source_detail": "wikidata"
+  },
+  "sources": [
+    {
+      "id": "src_route_yongling_wiki_20261124",
+      "title": "王建墓 - 维基百科",
+      "url": "https://zh.wikipedia.org/wiki/王建墓",
+      "publisher": "维基百科",
+      "source_type": "encyclopedia",
+      "accessed_at": "2026-11-24",
+      "verification_status": "pending",
+      "notes": "摘要事实与入口坐标的公开来源；坐标未经现场或官方复核。"
+    },
+    {
+      "id": "src_route_yongling_geo_20261124",
+      "title": "Wikidata 实体（含坐标）",
+      "url": "https://www.wikidata.org/wiki/Q1540709",
+      "publisher": "Wikidata",
+      "source_type": "encyclopedia",
+      "accessed_at": "2026-11-24",
+      "verification_status": "pending",
+      "notes": "仅用于入口坐标核对；坐标为 WGS84。"
+    }
+  ],
+  "source_ids": [
+    "src_route_yongling_wiki_20261124",
+    "src_route_yongling_geo_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "pending",
+  "confidence": "medium",
+  "note": "摘要按所列公开来源摘录，未做官方或现场核验；入口坐标为公开地理数据核对值（WGS84），未经实地复核。",
+  "updated_at": "2026-11-24"
+}

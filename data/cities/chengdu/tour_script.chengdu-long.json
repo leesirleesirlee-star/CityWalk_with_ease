@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.1.0",
+  "meta": {
+    "schema_version": "1.1.0",
+    "source": "local",
+    "generated_at": "1970-01-01T00:00:00.000Z",
+    "pipeline_version": "v4-chengdu-1.1.0",
+    "city": {
+      "id": "chengdu",
+      "name": "chengdu",
+      "pack_version": "0.1.0"
+    },
+    "budget": {
+      "mode": "strict",
+      "input_min": 300,
+      "total_min": 266,
+      "breakdown": {
+        "walk_min": 95.8,
+        "stay_min": 170
+      }
+    },
+    "dropped": [
+      {
+        "id": "cd-001",
+        "name": "大慈寺",
+        "kind": "score_below_threshold",
+        "reason": "coord_source=unmatched，无法计算步行耗时，不参与选点"
+      },
+      {
+        "id": "cd-002",
+        "name": "东郊记忆",
+        "kind": "score_below_threshold",
+        "reason": "coord_source=unmatched，无法计算步行耗时，不参与选点"
+      },
+      {
+        "id": "cd-004",
+        "name": "九眼桥",
+        "kind": "score_below_threshold",
+        "reason": "coord_source=unmatched，无法计算步行耗时，不参与选点"
+      },
+      {
+        "id": "cd-006",
+        "name": "成都大熊猫繁育研究基地",
+        "kind": "score_below_threshold",
+        "reason": "coord_source=unmatched，无法计算步行耗时，不参与选点"
+      },
+      {
+        "id": "cd-008",
+        "name": "太古里",
+        "kind": "score_below_threshold",
+        "reason": "coord_source=unmatched，无法计算步行耗时，不参与选点"
+      },
+      {
+        "id": "cd-007",
+        "name": "人民公园",
+        "kind": "budget_exceeded",
+        "reason": "加入后总时长 323 分钟超过上限 300 分钟"
+      }
+    ],
+    "agent_trace": [
+      {
+        "step": 1,
+        "label": "解析需求",
+        "input_summary": "候选 10 个",
+        "output_summary": "解析需求完成",
+        "hits": 10,
+        "duration_ms": 43,
+        "evidence_refs": [],
+        "warnings": []
+      },
+      {
+        "step": 2,
+        "label": "加载城市包",
+        "input_summary": "候选 10 个",
+        "output_summary": "加载城市包完成",
+        "hits": 10,
+        "duration_ms": 61,
+        "evidence_refs": [],
+        "warnings": []
+      },
+      {
+        "step": 3,
+        "label": "贪心选点",
+        "input_summary": "候选 10 个",
+        "output_summary": "贪心选点完成",
+        "hits": 4,
+        "duration_ms": 58,
+        "evidence_refs": [],
+        "warnings": []
+      },
+      {
+        "step": 4,
+        "label": "预算校验",
+        "input_summary": "候选 10 个",
+        "output_summary": "预算校验完成",
+        "hits": 10,
+        "duration_ms": 80,
+        "evidence_refs": [],
+        "warnings": []
+      },
+      {
+        "step": 5,
+        "label": "组装脚本",
+        "input_summary": "候选 10 个",
+        "output_summary": "入选 4，丢弃 6",
+        "hits": 10,
+        "duration_ms": 63,
+        "evidence_refs": [],
+        "warnings": [
+          "路网不可用，腿时长按直线估算"
+        ]
+      }
+    ],
+    "validation": {
+      "valid": true,
+      "issues": [],
+      "warnings": [
+        "路网未验证：capability.walk_network=false，所有 leg 为 fallback_straight（直线估算）。"
+      ]
+    }
+  },
+  "route": [
+    {
+      "order": 1,
+      "id": "cd-009",
+      "name": "望江楼公园",
+      "lat": 30.6320131,
+      "lng": 104.0894282,
+      "stay_min": 40,
+      "score": 0.022,
+      "reason": "性价比 0.0225（价值 0.9，耗时 40 分钟），贪心入选",
+      "commentary": null,
+      "assets": {
+        "panorama": null,
+        "model3d": null,
+        "photo": null
+      },
+      "leg": null
+    },
+    {
+      "order": 2,
+      "id": "cd-010",
+      "name": "武侯祠",
+      "lat": 30.6483863,
+      "lng": 104.0454567,
+      "stay_min": 40,
+      "score": 0.0085,
+      "reason": "性价比 0.0085（价值 0.9，耗时 105.5 分钟），贪心入选",
+      "commentary": null,
+      "assets": {
+        "panorama": null,
+        "model3d": null,
+        "photo": null
+      },
+      "leg": {
+        "from_id": "cd-009",
+        "to_id": "cd-010",
+        "distance_m": 4584,
+        "walk_min": 65.5,
+        "routing_status": "fallback_straight"
+      }
+    },
+    {
+      "order": 3,
+      "id": "cd-003",
+      "name": "锦里",
+      "lat": 30.6488068,
+      "lng": 104.0469491,
+      "stay_min": 45,
+      "score": 0.0177,
+      "reason": "性价比 0.018（价值 0.85，耗时 47.1 分钟），贪心入选",
+      "commentary": null,
+      "assets": {
+        "panorama": null,
+        "model3d": null,
+        "photo": null
+      },
+      "leg": {
+        "from_id": "cd-010",
+        "to_id": "cd-003",
+        "distance_m": 150,
+        "walk_min": 2.1,
+        "routing_status": "fallback_straight"
+      }
+    },
+    {
+      "order": 4,
+      "id": "cd-005",
+      "name": "宽窄巷子",
+      "lat": 30.6661912,
+      "lng": 104.051265,
+      "stay_min": 45,
+      "score": 0.0135,
+      "reason": "性价比 0.0137（价值 1，耗时 73.2 分钟），贪心入选",
+      "commentary": null,
+      "assets": {
+        "panorama": null,
+        "model3d": null,
+        "photo": null
+      },
+      "leg": {
+        "from_id": "cd-003",
+        "to_id": "cd-005",
+        "distance_m": 1977,
+        "walk_min": 28.2,
+        "routing_status": "fallback_straight"
+      }
+    }
+  ]
+}

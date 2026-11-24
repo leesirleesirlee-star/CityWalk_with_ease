@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.1.0",
+  "meta": {
+    "schema_version": "1.1.0",
+    "source": "local",
+    "generated_at": "2026-11-19T10:00:00.000Z",
+    "pipeline_version": "v4-chengdu-1.1.0",
+    "city": {
+      "id": "chengdu",
+      "name": "成都",
+      "pack_version": "0.1.0"
+    },
+    "budget": {
+      "mode": "strict",
+      "input_min": 180,
+      "total_min": 161,
+      "breakdown": {
+        "walk_min": 41,
+        "stay_min": 120
+      }
+    },
+    "dropped": [
+      {
+        "id": "cd_panda",
+        "name": "大熊猫繁育研究基地",
+        "reason": "位于城北三环外，与本路线老城动线相反，往返超过 90 分钟",
+        "kind": "budget_exceeded"
+      },
+      {
+        "id": "cd_taikooli",
+        "name": "成都远洋太古里",
+        "reason": "现代商业街区，与「想看老建筑」这一需求不匹配",
+        "kind": "score_below_threshold"
+      },
+      {
+        "id": "cd_jinli",
+        "name": "锦里古街",
+        "reason": "与武侯祠同片区，二选一保留评分更高的武侯祠",
+        "kind": "not_selected"
+      },
+      {
+        "id": "cd_jiuyanqiao",
+        "name": "九眼桥",
+        "reason": "夜生活场景，半日白天行程内体验不成立",
+        "kind": "not_selected"
+      },
+      {
+        "id": "cd_daci_temple",
+        "name": "大慈寺",
+        "reason": "与宽窄巷子同为街巷类，停留时长重叠，保留评分更高的宽窄巷子",
+        "kind": "not_selected"
+      },
+      {
+        "id": "cd_dongjiao",
+        "name": "东郊记忆",
+        "reason": "位于城东，单程通勤超过 30 分钟，半日预算内不划算",
+        "kind": "budget_exceeded"
+      },
+      {
+        "id": "cd_wangjianglou",
+        "name": "望江楼公园",
+        "reason": "在城南锦江边，与现有动线不顺路，加入后需重排整条路线",
+        "kind": "not_selected"
+      }
+    ],
+    "agent_trace": [
+      {
+        "step": 1,
+        "label": "意图解析",
+        "input_summary": "半天，想看老建筑，能拍照，别走太多路",
+        "output_summary": "城市=成都；预算=180 分钟；兴趣=老建筑、拍照；约束=少走路、慢节奏",
+        "hits": 4,
+        "duration_ms": 12,
+        "evidence_refs": [],
+        "warnings": []
+      },
+      {
+        "step": 2,
+        "label": "候选召回",
+        "input_summary": "城市=成都，兴趣=老建筑、拍照",
+        "output_summary": "CityPack chengdu 召回候选 10 个，全部带登记坐标与标签",
+        "hits": 10,
+        "duration_ms": 34,
+        "evidence_refs": [
+          "knowledge/attractions/chengdu/attr_chengdu_renmin_park.json",
+          "knowledge/attractions/chengdu/attr_chengdu_kuanzhai.json",
+          "knowledge/attractions/chengdu/attr_chengdu_wuhou.json",
+          "knowledge/attractions/chengdu/attr_chengdu_panda.json"
+        ],
+        "warnings": []
+      },
+      {
+        "step": 3,
+        "label": "预算装配",
+        "input_summary": "10 个候选，预算 180 分钟，预算模式 strict",
+        "output_summary": "入选 3 站（停留 120 + 步行 41 = 161 分钟），舍弃 7 站并逐条记录原因",
+        "hits": 3,
+        "duration_ms": 8,
+        "evidence_refs": [],
+        "warnings": []
+      },
+      {
+        "step": 4,
+        "label": "解说调度",
+        "input_summary": "3 个入选项，逐个检索已复核事实",
+        "output_summary": "3 段解说全部基于登记事实生成，未触发「待复核」降级",
+        "hits": 3,
+        "duration_ms": 96,
+        "evidence_refs": [
+          "knowledge/attractions/chengdu/attr_chengdu_renmin_park.json",
+          "knowledge/attractions/chengdu/attr_chengdu_kuanzhai.json",
+          "knowledge/attractions/chengdu/attr_chengdu_wuhou.json"
+        ],
+        "warnings": []
+      },
+      {
+        "step": 5,
+        "label": "合成校验",
+        "input_summary": "route 3 站 + meta 预算账本",
+        "output_summary": "schema 1.1.0 校验通过，0 条 issue，0 条 warning",
+        "hits": 0,
+        "duration_ms": 21,
+        "evidence_refs": ["knowledge/tour_script.schema.json"],
+        "warnings": []
+      }
+    ],
+    "validation": {
+      "valid": true,
+      "issues": [],
+      "warnings": []
+    },
+    "stats": {
+      "poi_count": 3,
+      "total_duration_min": 161,
+      "interest_coverage": 0.67,
+      "walk_intensity": "low"
+    }
+  },
+  "route": [
+    {
+      "order": 1,
+      "id": "cd_renmin_park",
+      "name": "人民公园 · 鹤鸣茶社",
+      "lat": 30.6594137,
+      "lng": 104.0554652,
+      "stay_min": 40,
+      "score": 0.92,
+      "reason": "命中「老建筑」「拍照」，园内茶馆可坐着休息，符合「别走太多路」",
+      "commentary": "鹤鸣茶社是成都现存最老的茶馆之一，竹椅盖碗茶沿用了上百年。园区内有辛亥秋保路死事纪念碑，砖石结构仍保持原貌，适合停下来坐四十分钟。",
+      "assets": {
+        "panorama": null,
+        "model3d": null,
+        "photo": null
+      },
+      "leg": null
+    },
+    {
+      "order": 2,
+      "id": "cd_kuanzhai",
+      "name": "宽窄巷子",
+      "lat": 30.6661912,
+      "lng": 104.051265,
+      "stay_min": 45,
+      "score": 0.88,
+      "reason": "命中「老建筑」，保留清代街巷格局；距上一站步行 15 分钟，在「别走太多路」的容差内",
+      "commentary": "宽巷子、窄巷子、井巷子三条街保留了清末民初的院落格局，青砖门头与拴马石仍在原位。三条街加起来不到一公里，走完不用折返。",
+      "assets": {
+        "panorama": null,
+        "model3d": null,
+        "photo": null
+      },
+      "leg": {
+        "from_id": "cd_renmin_park",
+        "to_id": "cd_kuanzhai",
+        "distance_m": 1150,
+        "walk_min": 15,
+        "routing_status": "network"
+      }
+    },
+    {
+      "order": 3,
+      "id": "cd_wuhouci",
+      "name": "武侯祠",
+      "lat": 30.6483863,
+      "lng": 104.0454567,
+      "stay_min": 35,
+      "score": 0.81,
+      "reason": "命中「老建筑」与「有名的地方」，祠庙建筑群成组出现；距上一站约 1.9 公里，是本条路线最长的一段",
+      "commentary": "武侯祠是君臣合祀的祠庙，红墙夹道与惠陵神道是拍照最集中的两处。作为末站，出园后可直接从南门离开，不必原路返回。",
+      "assets": {
+        "panorama": null,
+        "model3d": null,
+        "photo": null
+      },
+      "leg": {
+        "from_id": "cd_kuanzhai",
+        "to_id": "cd_wuhouci",
+        "distance_m": 1900,
+        "walk_min": 26,
+        "routing_status": "fallback_straight"
+      }
+    }
+  ]
+}

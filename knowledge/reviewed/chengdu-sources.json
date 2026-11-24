@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "仅逐条核对摘要，核验来源与日期；不代表现场、入口坐标或营业信息已核验。",
+  "sources": [
+    {
+      "id": "src_chengdu_daci_20261124",
+      "title": "大慈寺在成都",
+      "url": "https://cdsjjq.sczwfw.gov.cn/module/download/downfile.jsp?classid=0&filename=b7300c6adff04871ad049ab608c04a18.pdf",
+      "publisher": "成都市锦江区政务服务网",
+      "source_type": "government",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    },
+    {
+      "id": "src_chengdu_dongjiao_20261124",
+      "title": "东郊记忆工业遗产",
+      "url": "https://scca.miit.gov.cn/xwdt/gzdt/art/2024/art_1452d44252de460eae9d2a7f4891f0c7.html",
+      "publisher": "四川省通信管理局",
+      "source_type": "government",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    },
+    {
+      "id": "src_chengdu_jinli_20261124",
+      "title": "关于锦里",
+      "url": "https://www.cdjinli.com/about/intro/",
+      "publisher": "成都锦里",
+      "source_type": "official",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    },
+    {
+      "id": "src_chengdu_jiuyanqiao_20261124",
+      "title": "成都三座“九眼桥”如何区分",
+      "url": "https://sc.people.com.cn/n2/2025/0904/c345167-41341674.html",
+      "publisher": "成都日报（人民网转载）",
+      "source_type": "media",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    },
+    {
+      "id": "src_chengdu_kuanzhai_20261124",
+      "title": "成都年味市集路线",
+      "url": "https://zhuanti.mct.gov.cn/rxhmxjgn2022/sichuan/detail/2899.html",
+      "publisher": "文化和旅游部",
+      "source_type": "government",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    },
+    {
+      "id": "src_chengdu_panda_20261124",
+      "title": "基地简介",
+      "url": "https://www.panda.org.cn/yd/about/",
+      "publisher": "成都大熊猫繁育研究基地",
+      "source_type": "official",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    },
+    {
+      "id": "src_chengdu_renmin_park_20261124",
+      "title": "公园记事",
+      "url": "https://hg.qhdcaw.gov.cn/portal/article/index/id/44/cid/39.html",
+      "publisher": "秦皇岛市委政法委网站",
+      "source_type": "government",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    },
+    {
+      "id": "src_chengdu_taikooli_20261124",
+      "title": "成都太古里项目介绍",
+      "url": "https://www.swireproperties.com/zh-cn/portfolio/current-developments/taikoo-li-chengdu/taikoo-li-chengdu/",
+      "publisher": "太古地产",
+      "source_type": "official",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    },
+    {
+      "id": "src_chengdu_wangjianglou_20261124",
+      "title": "成都望江楼公园与薛涛",
+      "url": "https://m.thepaper.cn/baijiahao_15401769",
+      "publisher": "方志四川（澎湃新闻转载）",
+      "source_type": "government",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    },
+    {
+      "id": "src_chengdu_wuhou_20261124",
+      "title": "成都武侯祠简介",
+      "url": "https://www.wuhouci.net.cn/about",
+      "publisher": "成都武侯祠博物馆",
+      "source_type": "museum",
+      "accessed_at": "2026-11-24",
+      "verification_status": "verified",
+      "notes": "已核对本条景点摘要；不代表入口坐标或全部历史细节已核验。"
+    }
+  ],
+  "attractions": {
+    "chengdu_dongjiao": {
+      "summary": "东郊记忆由原国营红光电子管厂旧址改建，保留工业遗存并发展文化创意活动。",
+      "source_ids": [
+        "src_chengdu_dongjiao_20261124"
+      ],
+      "checked_at": "2026-11-24"
+    },
+    "chengdu_jinli": {
+      "summary": "锦里文化旅游街区毗邻武侯祠，以三国文化、民俗和非遗体验为特色。",
+      "source_ids": [
+        "src_chengdu_jinli_20261124"
+      ],
+      "checked_at": "2026-11-24"
+    },
+    "chengdu_jiuyanqiao": {
+      "summary": "九眼桥位于一环路南一段附近，与滨江东路合江亭附近的安顺廊桥是不同的桥。",
+      "source_ids": [
+        "src_chengdu_jiuyanqiao_20261124"
+      ],
+      "checked_at": "2026-11-24"
+    },
+    "chengdu_kuanzhai": {
+      "summary": "宽窄巷子包括宽巷子、窄巷子和井巷子，展示成都街巷与院落文化。",
+      "source_ids": [
+        "src_chengdu_kuanzhai_20261124"
+      ],
+      "checked_at": "2026-11-24"
+    },
+    "chengdu_panda": {
+      "summary": "成都大熊猫繁育研究基地位于成都市成华区，开展大熊猫等珍稀野生动物保护、繁育与科普。",
+      "source_ids": [
+        "src_chengdu_panda_20261124"
+      ],
+      "checked_at": "2026-11-24"
+    },
+    "chengdu_renmin_park": {
+      "summary": "成都人民公园原名少城公园，园内有鹤鸣茶社。",
+      "source_ids": [
+        "src_chengdu_renmin_park_20261124"
+      ],
+      "checked_at": "2026-11-24"
+    },
+    "chengdu_taikooli": {
+      "summary": "成都太古里位于锦江区，是毗邻大慈寺的开放式街区购物中心。",
+      "source_ids": [
+        "src_chengdu_taikooli_20261124"
+      ],
+      "checked_at": "2026-11-24"
+    },
+    "chengdu_wangjianglou": {
+      "summary": "望江楼公园内有与唐代诗人薛涛纪念相关的景观；有关故居的说法应谨慎辨别。",
+      "source_ids": [
+        "src_chengdu_wangjianglou_20261124"
+      ],
+      "checked_at": "2026-11-24"
+    },
+    "chengdu_wuhou": {
+      "summary": "成都武侯祠包含三国历史遗迹区、西区和锦里民俗区，是了解蜀汉历史文化的场所。",
+      "source_ids": [
+        "src_chengdu_wuhou_20261124"
+      ],
+      "checked_at": "2026-11-24"
+    },
+    "chengdu_daci_temple": {
+      "summary": "大慈寺位于成都锦江区，是与成都历史相关的佛教寺院。",
+      "source_ids": [
+        "src_chengdu_daci_20261124"
+      ],
+      "checked_at": "2026-11-24"
+    }
+  }
+}

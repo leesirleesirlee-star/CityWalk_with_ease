@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "id": "route_chengdu_anshun_bridge",
+  "poi_id": "cd-109",
+  "city_id": "chengdu",
+  "name": "安顺廊桥",
+  "category": "河岸夜景",
+  "summary": "横跨锦江的仿古廊桥，位于滨江路，桥上设有一家餐馆，夜间灯光与合江亭一带的锦江夜景相连。",
+  "tags": [
+    "廊桥",
+    "锦江",
+    "夜景",
+    "合江亭"
+  ],
+  "address": "成都市滨江路66号（锦江之上）",
+  "opening_hours": null,
+  "stay_min": 25,
+  "coordinates": {
+    "lat": 30.6442,
+    "lng": 104.0834,
+    "system": "WGS84",
+    "source_detail": "wikipedia"
+  },
+  "sources": [
+    {
+      "id": "src_route_anshun_bridge_wiki_20261124",
+      "title": "安顺廊桥 - 维基百科",
+      "url": "https://zh.wikipedia.org/wiki/安顺廊桥",
+      "publisher": "维基百科",
+      "source_type": "encyclopedia",
+      "accessed_at": "2026-11-24",
+      "verification_status": "pending",
+      "notes": "摘要事实与入口坐标的公开来源；坐标未经现场或官方复核。"
+    }
+  ],
+  "source_ids": [
+    "src_route_anshun_bridge_wiki_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "pending",
+  "confidence": "medium",
+  "note": "摘要按所列公开来源摘录，未做官方或现场核验；入口坐标为公开地理数据核对值（WGS84），未经实地复核。",
+  "updated_at": "2026-11-24"
+}

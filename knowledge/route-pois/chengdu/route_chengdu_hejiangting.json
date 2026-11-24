@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "id": "route_chengdu_hejiangting",
+  "poi_id": "cd-111",
+  "city_id": "chengdu",
+  "name": "合江亭",
+  "category": "古迹",
+  "summary": "位于府河与南河交汇处的亭式地标，是锦江夜游与滨江步道上的节点，合江亭一带为成都市区夜景观赏地之一。",
+  "tags": [
+    "锦江",
+    "府河",
+    "南河",
+    "夜景"
+  ],
+  "address": "成都市锦江区滨江东路合江亭",
+  "opening_hours": null,
+  "stay_min": 25,
+  "coordinates": {
+    "lat": 30.6453339,
+    "lng": 104.0811936,
+    "system": "WGS84",
+    "source_detail": "osm_nominatim"
+  },
+  "sources": [
+    {
+      "id": "src_route_hejiangting_wiki_20261124",
+      "title": "合江亭 - 维基百科",
+      "url": "https://zh.wikipedia.org/wiki/合江亭",
+      "publisher": "维基百科",
+      "source_type": "encyclopedia",
+      "accessed_at": "2026-11-24",
+      "verification_status": "pending",
+      "notes": "摘要事实与入口坐标的公开来源；坐标未经现场或官方复核。"
+    },
+    {
+      "id": "src_route_hejiangting_geo_20261124",
+      "title": "OpenStreetMap 检索（含坐标）",
+      "url": "https://www.openstreetmap.org/search?query=%E5%90%88%E6%B1%9F%E4%BA%AD%20%E6%88%90%E9%83%BD",
+      "publisher": "OpenStreetMap",
+      "source_type": "other",
+      "accessed_at": "2026-11-24",
+      "verification_status": "pending",
+      "notes": "仅用于入口坐标核对；坐标为 WGS84。"
+    }
+  ],
+  "source_ids": [
+    "src_route_hejiangting_wiki_20261124",
+    "src_route_hejiangting_geo_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "pending",
+  "confidence": "medium",
+  "note": "摘要按所列公开来源摘录，未做官方或现场核验；入口坐标为公开地理数据核对值（WGS84），未经实地复核。",
+  "updated_at": "2026-11-24"
+}

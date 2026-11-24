@@ -1,0 +1,111 @@
+name: Bug report
+description: Report a reproducible problem with the planner, the UI or the local API.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+
+        - Search the existing issues before filing, and make sure you can still reproduce
+          the problem on the latest 1.0.x release.
+        - Remove API keys, tokens and personal data from any logs or screenshots you attach.
+        - Security vulnerabilities must **not** be reported here. Please follow the private
+          reporting process in `SECURITY.md`.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of the problem.
+      placeholder: What happened, and where in the app or API did it happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Exact steps, commands and input text, starting from a clean clone. A report without a reproduction may be closed.
+      placeholder: |
+        1. Run `npm install`
+        2. Run `npm run dev`
+        3. Open http://127.0.0.1:5178/
+        4. Type "..."
+        5. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: What happened instead? Include exact error messages or failing assertions.
+    validations:
+      required: true
+
+  - type: input
+    id: node-version
+    attributes:
+      label: Node.js version
+      description: Output of `node --version`. The project requires Node.js >= 20.
+      placeholder: v20.19.0
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: Windows 11 / macOS 15 / Ubuntu 24.04
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: Name and version, or "not applicable" if the bug is not in the UI.
+      placeholder: Chrome 140 on Windows 11
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and configuration
+      description: How did you run the app, and which optional services are configured? Never paste the keys themselves.
+      placeholder: |
+        Command: npm run dev / npm run build && npm run preview
+        DEEPSEEK_API_KEY configured: no / yes
+        AMAP_WEB_KEY configured: no / yes
+        Deterministic fallback active: yes / no
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots-logs
+    attributes:
+      label: Screenshots and logs
+      description: Drag and drop screenshots, or paste relevant browser console / server output. Remove secrets first.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched the existing issues and this is not a duplicate.
+          required: true
+        - label: I removed API keys, tokens and personal data from this report, its logs and screenshots.
+          required: true

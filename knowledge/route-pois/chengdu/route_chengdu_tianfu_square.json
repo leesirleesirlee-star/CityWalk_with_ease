@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "id": "route_chengdu_tianfu_square",
+  "poi_id": "cd-107",
+  "city_id": "chengdu",
+  "name": "天府广场",
+  "category": "城市公园",
+  "summary": "位于成都市中心的城市广场，面积约8.8万平方米，是人民南路与蜀都大道交汇处的城市地标，地铁1号线与2号线在此换乘。",
+  "tags": [
+    "城市广场",
+    "地铁换乘",
+    "城市地标"
+  ],
+  "address": "成都市青羊区人民南路一段",
+  "opening_hours": null,
+  "stay_min": 25,
+  "coordinates": {
+    "lat": 30.657512,
+    "lng": 104.065853,
+    "system": "WGS84",
+    "source_detail": "wikipedia"
+  },
+  "sources": [
+    {
+      "id": "src_route_tianfu_square_wiki_20261124",
+      "title": "天府广场 - 维基百科",
+      "url": "https://zh.wikipedia.org/wiki/天府广场",
+      "publisher": "维基百科",
+      "source_type": "encyclopedia",
+      "accessed_at": "2026-11-24",
+      "verification_status": "pending",
+      "notes": "摘要事实与入口坐标的公开来源；坐标未经现场或官方复核。"
+    }
+  ],
+  "source_ids": [
+    "src_route_tianfu_square_wiki_20261124"
+  ],
+  "verification_status": "pending",
+  "content_status": "pending",
+  "confidence": "medium",
+  "note": "摘要按所列公开来源摘录，未做官方或现场核验；入口坐标为公开地理数据核对值（WGS84），未经实地复核。",
+  "updated_at": "2026-11-24"
+}
