@@ -12,6 +12,11 @@ updates:
     commit-message:
       prefix: "chore"
       include: "scope"
+    ignore:
+      # The project is pinned to Vite 5; a major framework upgrade needs a
+      # dedicated migration PR that updates the config, build and docs together.
+      - dependency-name: "vite"
+        update-types: ["version-update:semver-major"]
 
   # GitHub Actions used by CI
   - package-ecosystem: "github-actions"
